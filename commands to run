@@ -38,9 +38,13 @@ source venv/bin/activate
 
 ### **Step 6: Install Required Libraries**
 
-```shellscript
+```shellscriptpip show scikit-learn
+
 pip install --upgrade pip
 pip install pandas numpy matplotlib seaborn streamlit
+pip install --upgrade --force-reinstall reportlab
+pip install --upgrade scikit-learn
+
 ```
 
 ### **Step 7: Create the Python File**
