@@ -1,77 +1,40 @@
-complete step-by-step procedure to run the enhanced Python visualization script on Ubuntu terminal.
 
-## **Step-by-Step Procedure to Run on Ubuntu Terminal**
-
-### **Step 1: Open Terminal**
-
-```shellscript
-Ctrl + Alt + T
-```
-
-### **Step 2: Install Python & pip (if not already installed)**
-
-```shellscript
 sudo apt update
 sudo apt install python3 python3-pip python3-venv
-```
 
-### **Step 3: Create a Project Directory**
 
-```shellscript
 mkdir visualization_project
 cd visualization_project
-```
 
-### **Step 4: Create a Virtual Environment**
 
-```shellscript
+
 python3 -m venv venv
-```
 
-### **Step 5: Activate Virtual Environment**
 
-```shellscript
+
 source venv/bin/activate
-```
 
-*(You should see `(venv)` appear at the start of your terminal line)*
-
-### **Step 6: Install Required Libraries**
-
-```shellscriptpip show scikit-learn
 
 pip install --upgrade pip
 pip install pandas numpy matplotlib seaborn streamlit
 pip install --upgrade --force-reinstall reportlab
 pip install --upgrade scikit-learn
 
-```
 
-### **Step 7: Create the Python File**
 
-```shellscript
+
 nano app_enhanced.py
-```
 
 - Copy and paste the entire code from the `app_enhanced.py` file
 - Press `Ctrl + X`, then `Y`, then `Enter` to save
 
 
-### **Step 8: Run the Script**
 
-**Option A - If it's a Streamlit App:**
-
-```shellscript
 streamlit run app_enhanced.py
-```
 
-This will open a local web interface at `http://localhost:8501`
 
-**Option B - If it's a Regular Python Script:**
-
-```shellscript
 python3 app_enhanced.py
-```
+
 
 ### **Step 9: View Output**
 
